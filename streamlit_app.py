@@ -96,7 +96,7 @@ if clicked:
   
   #st.sidebar.audio(audio_bytes, format='audio/ogg')
 
-  st.sidebar.subheader(diri[i])
+ 
 
   components.html(html_string)
   string=f'{string}'
