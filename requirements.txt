@@ -1,0 +1,10 @@
+av
+opencv-python
+streamlit
+streamlit-webrtc
+mediapipe
+cvzone
+st_clickable_images
+st_click_detector
+streamlit-javascript
+pyshorteners
