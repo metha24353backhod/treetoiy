@@ -37,14 +37,7 @@ html_string='''
 #html(my_html)
 
 
-path = "./songs"
 
-dir = os.listdir(path)
-sort=dir.sort()
-diri=[]
-
-for titler in dir:
-  diri.append(titler)
 
 audio='<audio controls autoplay><source src="GFG.ogg" type="audio/ogg"></audio>'
        
@@ -81,8 +74,7 @@ if clicked:
   print("hello")
   print(clicked)
   i=int(clicked)
-  list=diri[i]
-  CWF=os.path.join(path,list)
+  
   lost=dict[i]
   str_5=dict2[i]
   str_5=str_5[:(len(str_5)-1)]
@@ -101,7 +93,7 @@ if clicked:
   #st.markdown(html_string,unsafe_allow_html=True)
   #st.write(string)
   #name=audio_file.name
-  qwert=(os.path.splitext(list)[0])
+  
   #st.sidebar.audio(audio_bytes, format='audio/ogg')
 
   st.sidebar.subheader(diri[i])
