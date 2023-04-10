@@ -107,4 +107,4 @@ if clicked:
         
        
         components.html(my_html)
-        components.html(my_html2)
+        
