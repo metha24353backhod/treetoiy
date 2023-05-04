@@ -100,8 +100,9 @@ if clicked:
 
   components.html(html_string)
   string=f'{string}'
-  with st.empty():
-    with col1:
+  with col1:  
+    with st.empty():
+    
         with st.sidebar:
             my_html = f"{string}"
             my_html2=f"{strimg}"
