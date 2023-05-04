@@ -47,66 +47,67 @@ audio='<audio controls autoplay><source src="GFG.ogg" type="audio/ogg"></audio>'
 #x.load();
 #alert("This is an alert dialog box");  
 #}) """)
-str_reg="  "
-str_start='"""  '
-for i in range(len(dict)):
-  str_1="<a href='#' "
-  str_2= "id="
-  str_3=str(i)
-  str_4="><img src="
-  str_5=dict2[i]
-  str_5=str_5[:(len(str_5)-1)]
-  type_tiny = pyshorteners.Shortener()
-  str_5=short_url = type_tiny.isgd.short(str_5)
-  str_6="></a>    "
-  final_str=str_1+str_2+str_3+str_4+str_5+str_6
-  print(final_str)
-  str_reg=str_reg+final_str
+with col2:
+    str_reg="  "
+    str_start='"""  '
+    for i in range(len(dict)):
+      str_1="<a href='#' "
+      str_2= "id="
+      str_3=str(i)
+      str_4="><img src="
+      str_5=dict2[i]
+      str_5=str_5[:(len(str_5)-1)]
+      type_tiny = pyshorteners.Shortener()
+      str_5=short_url = type_tiny.isgd.short(str_5)
+      str_6="></a>    "
+      final_str=str_1+str_2+str_3+str_4+str_5+str_6
+      print(final_str)
+      str_reg=str_reg+final_str
 
 
-str_end='   """'
-content=str_reg
-print(content)
-clicked = click_detector(content)
-  
-if clicked:
-  #placeholder = st.empty()
-  print("hello")
-  print(clicked)
-  i=int(clicked)
-  
-  lost=dict[i]
-  str_5=dict2[i]
-  str_5=str_5[:(len(str_5)-1)]
-  type_tiny = pyshorteners.Shortener()
-  str_5=short_url = type_tiny.isgd.short(str_5)
-  
-  strimg="<img src='"+str_5+"' width=100% height=100%>"
- 
-  a='<audio controls autoplay><source src="'
-  type_tiny = pyshorteners.Shortener()
-  short_url = type_tiny.isgd.short(dict[i])  
-  w=short_url
-  r='"'
-  wet='   type="audio/ogg"></audio>'
-  string=a+w+r+wet
-  #st.markdown(html_string,unsafe_allow_html=True)
-  #st.write(string)
-  #name=audio_file.name
-  
-  #st.sidebar.audio(audio_bytes, format='audio/ogg')
+    str_end='   """'
+    content=str_reg
+    print(content)
+    clicked = click_detector(content)
 
- 
+    if clicked:
+      #placeholder = st.empty()
+      print("hello")
+      print(clicked)
+      i=int(clicked)
 
-  components.html(html_string)
-  string=f'{string}'
-  with col1:  
-    
-    
-    with st.sidebar:
-        my_html = f"{string}"
-        my_html2=f"{strimg}"
-        
-       
-        components.html(my_html)
-        
+      lost=dict[i]
+      str_5=dict2[i]
+      str_5=str_5[:(len(str_5)-1)]
+      type_tiny = pyshorteners.Shortener()
+      str_5=short_url = type_tiny.isgd.short(str_5)
+
+      strimg="<img src='"+str_5+"' width=100% height=100%>"
+
+      a='<audio controls autoplay><source src="'
+      type_tiny = pyshorteners.Shortener()
+      short_url = type_tiny.isgd.short(dict[i])  
+      w=short_url
+      r='"'
+      wet='   type="audio/ogg"></audio>'
+      string=a+w+r+wet
+      #st.markdown(html_string,unsafe_allow_html=True)
+      #st.write(string)
+      #name=audio_file.name
+
+      #st.sidebar.audio(audio_bytes, format='audio/ogg')
+
+
+
+      components.html(html_string)
+      string=f'{string}'
+      with col1:  
+
+
+        with st.sidebar:
+            my_html = f"{string}"
+            my_html2=f"{strimg}"
+
+
+            components.html(my_html)
+
