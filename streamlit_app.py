@@ -10,7 +10,7 @@ from st_click_detector import click_detector
 import streamlit.components.v1 as components
 st.set_page_config(page_title="Geet_sagar",page_icon="🧊")
 image="https://github.com/sanidhya2013kvs/net/blob/main/images/ram%20ram%20jai%20raja%20ram.jpg?raw=true"
-
+col1,col2 = st.columns([1, 3])
 
 # Define your javascript
 with open('./name_songs.txt') as f:
@@ -101,10 +101,11 @@ if clicked:
   components.html(html_string)
   string=f'{string}'
   with st.empty():
-    with st.sidebar:
-        my_html = f"{string}"
-        my_html2=f"{strimg}"
+    with col1:
+        with st.sidebar:
+            my_html = f"{string}"
+            my_html2=f"{strimg}"
         
        
-        components.html(my_html)
+            components.html(my_html)
         
