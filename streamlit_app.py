@@ -104,10 +104,10 @@ with col2:
       with col1:  
 
 
-        with st.sidebar:
-            my_html = f"{string}"
-            my_html2=f"{strimg}"
+       
+        my_html = f"{string}"
+        my_html2=f"{strimg}"
 
 
-            components.html(my_html)
+        components.html(my_html)
 
