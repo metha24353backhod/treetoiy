@@ -54,7 +54,7 @@ for i in range(len(dict)):
   str_1="<a href='#' "
   str_2= "id="
   str_3=str(i)
-  str_4='><img "Padding: 10px,10px,10px,10px;" src='
+  str_4='><img "Padding: 50px,50px,10px,10px;" src='
   str_5=dict2[i]
   str_5=str_5[:(len(str_5)-1)]
   type_tiny = pyshorteners.Shortener()
